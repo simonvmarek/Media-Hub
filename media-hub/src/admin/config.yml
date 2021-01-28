@@ -35,7 +35,7 @@ collections:
         options: ["Tags", "created", "from", "config.yml"]
   - label: "LMP"
     name: "lmp"
-    folder: "/media-hub/src/hub-files"
+    folder: "/media-hub/src/lmp"
     create: true
     editor:
       preview: true

@@ -1,5 +1,5 @@
 ---
-layout: hub-files
+layout: lmp
 ---
 
 <section class="mt-15">
@@ -8,7 +8,7 @@ layout: hub-files
     {% for lmp in lmplist | reverse %}
         <article class="my-8">
             <h2 class="font-bold text-3xl text-gray-900 mb-2">
-                <a href="{{ lmp.url | url }}">
+                <a href="/Media-Hub/{{ lmp.url | url }}">
                     {% if lmp.data.title %}
                         {{ lmp.data.title }}
                     {% else %}
