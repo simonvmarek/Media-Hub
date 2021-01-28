@@ -5,7 +5,7 @@ backend:
   ## enable below lines for github integration ###
   name: github
   repo: uamediaprod.github.io/Media-Hub/
-  branch: master
+  branch: main
   site_domain: keen-euler-07f2e0.netlify.com
 
 media_folder: "/media-hub/src/static/img"
