@@ -23,8 +23,8 @@ jobs:
 
       - name: Install dependencies & build
         run: |
-          npm ci
-          npm run build          
+          npm ci --prefix media-hub
+          npm run build --prefix media-hub      
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
