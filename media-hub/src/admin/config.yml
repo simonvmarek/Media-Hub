@@ -4,7 +4,7 @@ backend:
   # branch: master
   ## enable below lines for github integration ###
   name: github
-  repo: uamediaprod.github.io/Media-Hub/
+  repo: UAMediaProd/Media-Hub
   branch: main
   site_domain: keen-euler-07f2e0.netlify.com
 
