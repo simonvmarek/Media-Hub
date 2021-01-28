@@ -3,7 +3,7 @@ items:
   - text: Menu One
     url: "#"
   - text: LMP
-    url: "./lmp"
+    url: "/Media-Hub/lmp"
   - text: Blog
-    url: "./blog"
+    url: "/Media-Hub/blog/"
 
