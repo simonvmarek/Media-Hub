@@ -1,4 +1,4 @@
-name: Build Eleventy
+name: Manual Build
 
 on:
   workflow_dispatch:
