@@ -13,14 +13,14 @@ public_folder: "./static/img"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
-# publish_mode: editorial_workflow
+ publish_mode: simple
 collections:
   - label: "Blog"
     name: "blog"
     folder: "/media-hub/src/posts"
     create: true
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
