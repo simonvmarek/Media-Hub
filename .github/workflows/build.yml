@@ -23,6 +23,7 @@ jobs:
 
       - name: Install dependencies & build
         run: |
+          cd media-hub
           npm ci
           npm run build          
 
