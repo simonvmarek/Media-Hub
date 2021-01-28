@@ -2,7 +2,8 @@
 items:
   - text: Menu One
     url: "#"
-  - text: Menu Two
-    url: "#"
+  - text: LMP
+    url: "./lmp"
   - text: Blog
     url: "./blog"
+
