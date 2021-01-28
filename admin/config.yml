@@ -17,7 +17,7 @@ publish_mode: editorial_workflow
 collections:
   - label: "Blog"
     name: "blog"
-    folder: "src/posts"
+    folder: "/media-hub/src/posts"
     create: true
     editor:
       preview: false
@@ -40,7 +40,7 @@ collections:
     files:
       - label: "Navigation"
         name: "items"
-        file: "src/_data/navigation.yaml"
+        file: "/media-hub/src/_data/navigation.yaml"
         fields:
           - label: Nav Items
             name: items
@@ -52,7 +52,7 @@ collections:
               - { label: URL, name: url, widget: string }
       - label: "Quick Links"
         name: "links"
-        file: "src/_data/quicklinks.yaml"
+        file: "/media-hub/src/_data/quicklinks.yaml"
         fields:
           - label: Nav Items
             name: links
@@ -64,7 +64,7 @@ collections:
               - { label: Description, name: desc, widget: string }
       - label: "Meta Settings"
         name: "settings"
-        file: "src/_data/settings.yaml"
+        file: "/media-hub/src/_data/settings.yaml"
         fields:
           - { label: Name, name: name, widget: string }
           - { label: Author, name: author, widget: string }
