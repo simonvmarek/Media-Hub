@@ -7,7 +7,6 @@ Central repository of LMP's Media Hub project. Central contains the base web app
 - LMP Style Guide and Design Language development
 - Learning Resource Plugins and Interactives
 - Web App Helpers
-- Server-side functions
 
 ## Project Diagram
 
