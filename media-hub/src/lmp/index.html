@@ -7,6 +7,7 @@ layout: lmp
 
     {% for lmp in lmplist | reverse %}
         <article class="my-8">
+          <a href="{{ lmp.url | url }}" class="text-indigo-500 font-bold text-lg">
             <h2 class="font-bold text-3xl text-gray-900 mb-2">
                 <a href="/Media-Hub/{{ lmp.url | url }}">
                     {% if lmp.data.title %}
@@ -30,11 +31,10 @@ layout: lmp
                 </p>
             {% endif %}
 
-            <p>
-                <a href="{{ lmp.url | url }}" class="text-indigo-500 font-bold text-lg">
-                    Read more →
+            <img src="{{ lmp.data.boxurl }}" width="100%" alt="{{ lmp.data.title}}">
+           
                 </a>
-            </p>
+          
 
         </article>
     {% endfor %}
