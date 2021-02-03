@@ -2,40 +2,37 @@
 layout: lmp
 ---
 
-<section class="mt-15">
-    {% set lmplist = collections.lmp %}
+<section class="mt-15" style="display: flex;">
+  {% set lmplist = collections.lmp %} {% for lmp in lmplist | reverse %}
+  <article class="media-item my-8">
+    {% if lmp.data.boxurl %}
+    <img src="{{ lmp.data.boxurl }}" width="100%" alt="{{ lmp.data.title}}" />
+    {% endif %}
+    <h2 class="font-bold text-3xl text-gray-900 mb-2">
+      <a href="/Media-Hub/{{ lmp.url | url }}">
+        {% if lmp.data.title %} {{ lmp.data.title }} {% else %} Untitled {%
+        endif %}
+      </a>
+    </h2>
+    <p class="text-base leading-6 text-gray-500 mb-3">
+      <time>
+        {{ lmp.date | readableDate }} by
+        <a>{{ lmp.data.author }}</a>
+      </time>
+    </p>
 
-    {% for lmp in lmplist | reverse %}
-        <article class="my-8">
-          <a href="{{ lmp.url | url }}" class="text-indigo-500 font-bold text-lg">
-            <h2 class="font-bold text-3xl text-gray-900 mb-2">
-                <a href="/Media-Hub/{{ lmp.url | url }}">
-                    {% if lmp.data.title %}
-                        {{ lmp.data.title }}
-                    {% else %}
-                        Untitled
-                    {% endif %}
-                </a>
-            </h2>
-            <p class="text-base leading-6 text-gray-500 mb-3">
-                <time>
-                    {{ lmp.date | readableDate }}
-                    by
-                    <a>{{ lmp.data.author }}</a>
+    {# pop the tags here #}
 
-                </time>
-            </p>
-            {% if lmp.data.description %}
-                <p class="text-lg text-gray-500 mb-3">
-                    {{ lmp.data.description }}
-                </p>
-            {% endif %}
 
-            <img src="{{ lmp.data.boxurl }}" width="100%" alt="{{ lmp.data.title}}">
-           
-                </a>
-          
 
-        </article>
-    {% endfor %}
+    {# {% if lmp.data.description %}
+    <p class="text-lg text-gray-500 mb-3">{{ lmp.data.description }}</p>
+    {% endif %}  #}
+    
+    {#
+    <a href="{{ lmp.url | url }}" class="text-indigo-500 font-bold text-lg">
+    </a>
+    #}
+  </article>
+  {% endfor %}
 </section>

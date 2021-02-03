@@ -18,3 +18,14 @@ body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   @apply bg-gray-800;
 }
+
+.media-item {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 400px;
+  /* background: #e3e3e3; */
+  padding: 1em;
+  flex-flow: row;
+  margin: 1em;
+  box-shadow: 0 15px 15px rgba(50,50,93,.2),0 5px 10px rgba(0,0,0,.1)!important;
+}
