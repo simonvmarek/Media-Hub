@@ -3,7 +3,7 @@
 # Media-Hub
 Central repository of LMP's Media Hub project. Central contains the base web app for exploring LMP resources and Open Educational Resources (OERs) as well as having close relationships with other repositories which fall under the Media Hub project. These include:
 
-- Media Hub Repository ![Build Eleventy](https://github.com/UAMediaProd/Media-Hub/workflows/Build%20Eleventy/badge.svg)
+- Media Hub Repository ![Vue Deploy](https://github.com/UAMediaProd/Media-Hub/workflows/Vue%20Deploy/badge.svg)
 - LMP Style Guide and Design Language development
 - Learning Resource Plugins and Interactives
 - Web App Helpers
