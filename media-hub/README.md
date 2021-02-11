@@ -1,9 +1,29 @@
-# Media Hub Web App
+# media-vue
 
-Built using the NEAT (Netlify CMS, Eleventy, Alpine.js, Tailwind CSS) Starter boilerplate.
+## Project setup
+```
+npm install
+```
 
-Uses 11ty for static site generation and Netlify CMS for content management. 
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-## Aims
+### Compiles and minifies for production
+```
+npm run build
+```
 
-From this set up, we can use Netlify CMS as a GUI for creating series of media elements in a CMS-like interface.
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
