@@ -15,9 +15,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'history',
   base: '/Media-Hub/',
-  routes
+  routes: routes
 })
 
 export default router
