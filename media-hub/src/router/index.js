@@ -11,7 +11,7 @@ const routes = [
     name: 'Home',
     component: Home
   },
-  { path: '/media/:id', component: Media}
+  { path: '/media/:id', component: Media }
 ]
 
 const router = new VueRouter({

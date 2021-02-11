@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <a href="/"><div class='logo'>Media<span class='hub'>Hub</span></div></a>
+      <router-link to="/"><div class='logo'>Media<span class='hub'>Hub</span></div></router-link>
     </div>
    
     <router-view/>
@@ -29,9 +29,6 @@
   color: #2c3e50;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 
 .contain {
   max-width: 1460px;
