@@ -1,4 +1,4 @@
-name: Build Eleventy
+name: Vue Deploy
 
 on:
   push:
