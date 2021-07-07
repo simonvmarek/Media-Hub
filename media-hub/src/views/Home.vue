@@ -54,7 +54,7 @@ export default {
     },
     loadMore() {
       this.busy = true;
-      this.limit += 5;
+      this.limit += 3;
       setTimeout(() => {
       this.busy = false;
       }, 1000);
