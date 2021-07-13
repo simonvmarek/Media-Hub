@@ -1,0 +1,521 @@
+
+.bmd h1.page_header {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 2.916rem;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	padding-left:1.875rem!important;
+	padding-bottom: 1.25rem;
+	padding-right: 1.875rem;
+	text-transform: uppercase;
+}
+
+.bmd h2.page_header {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: normal;
+	display:block;
+  border-bottom: none !important;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	padding-left:1.875rem!important;
+	padding-top: 1.25rem!important;
+	text-transform: uppercase;
+}
+
+/*----
+
+TEXT STYLES
+
+----*/
+
+
+/* Fundamental font formatting */
+
+.bmd {
+  color: #102535;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+
+/* Hides default Canvas page titles */
+
+.pages.show .page-title {display:none;}
+
+
+/* Major headings eg course welcome page header */
+
+.bmd h1.feature_header {
+	color: white;
+	font-size: 2.916rem;
+	font-weight: bold;
+	line-height: 4.166rem;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	padding-left: 1.875rem;
+	text-transform: uppercase;
+}
+
+.bmd h2.feature_header {
+  color: white;
+  font-size: 1.166rem;
+  font-weight: normal;
+	display:block;
+  border-bottom: none !important;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	padding-left:1.875rem!important;
+	text-transform: uppercase;
+}
+
+
+/* Headings for headers on standard content pages */
+
+.bmd h1.rocc_page_title {
+	font-size: 2.5rem;
+	line-height: 2.916rem;
+	color:#48B79D;
+    font-weight: bold;
+    border-bottom: none !important;
+    text-transform: uppercase;
+	margin-top: 0;
+}
+
+.bmd h2.rocc_page_title {
+    font-weight: normal;
+	font-size: 1.166rem;
+    border-bottom: none !important;
+    text-transform: uppercase;
+	margin-bottom:0;
+}
+
+
+/* Generic heading styles */
+
+.bmd h2 {
+  color: #102535;
+  font-size: 1.666rem;
+  font-weight: bold;
+  display:inline-block;
+  padding: 0 !important;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  border-bottom: 3px solid #48B79D !important;
+}
+
+.bmd h3, .bmd h4 {
+  color: #102535;
+  font-size: 1.166rem;
+  font-weight: bold;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  margin: 12px 0px !important;
+  padding: 0 !important;
+  border: none !important; 
+  background-color: transparent!important;
+}
+
+.bmd h4 {
+  color: #102535;
+  font-size: 1.666rem;
+  font-weight: bold;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  margin: 12px 0px !important;
+  padding: 0 !important;
+  border: none !important; 
+}
+
+
+
+/* Definition lists */
+
+.bmd dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.bmd dt {
+	color: white;
+	background: #102535;
+	padding: 5px;
+	margin-top: 1.875rem;
+}
+
+.bmd dd {
+	margin-left: 1.875rem;
+	margin-top: 10px;
+}
+
+
+/* Custom numbered lists */
+
+.bmd .custom_counter {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+}
+
+.bmd .custom_counter li {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+
+.bmd .custom_counter li::before {
+  content: counter(my-awesome-counter);
+  font-size: 75%;
+  font-weight: bold;
+  position: absolute;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: 27px;
+  width: var(--size);
+--size: 24px;
+  height: var(--size);
+  top: 0;
+  background: #48B79D;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+
+
+/*----Content Positions----*/
+/*----Commented out for compatibility ---- Aaron */
+/* .kl_wrapper_parent {
+	max-width: 800px;
+	margin: auto;
+	
+} */
+
+.bmd .column-flow-3 {columns: 250px 3;padding: 0 11px;}
+.bmd .column-flow-2 {columns: 300px 2;padding: 0 11px;}
+
+
+/* div[id*="kl_custom_block"] {
+  margin: 0 0 2.375rem 0!important;
+} */
+
+/*this fixes the extra padding on columned sections*/
+.bmd .bs-container {
+	padding-left: 0!important;
+}
+
+
+.bmd .center_align {
+	margin-left: auto!important;
+	margin-right: auto!important;
+	max-width: 500px;
+	text-align: center;
+}
+
+
+
+
+
+/*----Element Styling----*/
+
+.bmd p.image_caption{
+	background-color: #EFEFEF;
+	font-size: 0.833rem;
+	padding: 10px 4%;
+    margin-top: 17px;
+}
+
+.bmd .image_with_caption{
+	margin-bottom: 0px;
+}
+
+.bmd .blue_brick {
+	background-color: #102535;
+	padding: 10px 15px 10px 15px!important;
+}
+
+.bmd .blue_brick h1, .blue_brick h2, .blue_brick h3, .blue_brick h4, .blue_brick h5 {
+	color: white;
+}
+
+.bmd .blue_brick p {
+	font-weight: bold;
+	color: white;
+}
+
+.bmd .blue_brick p.sub_text {
+	color: white;
+	font-weight: normal;
+}
+
+
+/* Popovers */
+
+.tippy-popper, .tippy-tooltip {will-change:initial!important;} /* removing will-change stops the text looking blurry */
+.tippy-tooltip.light-theme {box-shadow:none;background:#dadada;padding:18px;}
+.tippy-tooltip.light-theme .tippy-arrow {border-top:7px solid #dadada!important;}
+.tippy-content ul {font-size:1rem!important;}
+.tippy-tooltip {max-width:550px;}
+
+.kl_popover_trigger, .kl_tooltip_trigger, a.kl_popover_trigger, a.kl_tooltip_trigger {
+	color: #48B79D;
+	font-size: bold;
+	border-bottom: 1px dashed;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+    padding: 1px 0;
+    border-radius: 0;
+}
+
+
+
+/* "Quick Check" styles */
+
+.bmd .kl_quick_check p {font-size:inherit;}
+.bmd .kl_quick_check {border:none;padding: 25px 46px;background: #e3f5f1;}
+
+
+
+/* Pull quote box */
+
+.bmd .pull_quote{
+	background: #102535;
+	color:white;
+	display: block;
+	padding: 5px 15px 5px 15px;
+}
+
+.bmd .quote_name{
+	text-align: right;
+	font-style: italic;
+	font-size: 0.833rem;
+}
+
+
+/* Call-out bar */
+
+.bmd .call_out_bar {
+	border-left: 4px solid #48B79D;
+	padding-left: 10px;
+}
+
+
+/* Call-out box*/
+
+.bmd .call_out_box{
+	border: 4px solid #48B79D;
+	padding: 15px 1.875rem 15px 1.875rem;
+}
+
+.bmd .call_out_box_center{
+	border: 4px solid #48B79D;
+	width:60%;
+	padding: 5px 15px 5px 15px;
+	margin:1.25rem auto;
+	
+}
+
+
+
+
+
+/*----
+
+BUTTON STYLES
+
+----*/
+
+/*----Feature header buttons----*/
+
+.bmd .ui-icon, .kl_wrapper li.ui-icon  {
+	width: 0;
+	height: 0;
+	background-image: none;
+}
+
+.bmd a.feature_header_button {
+  color: white;
+  font-size: 1.166rem;
+  font-weight: bold;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  border: solid #48B79D 5px;
+  padding: 10px 25px;
+  margin: 11px 0 0 1.875rem;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+
+.bmd a.feature_header_button:hover {
+	transform: scale(1.05);
+	background-color: #9DD8CA;
+	border: solid #9DD8CA 5px;
+	color: #102535; 
+}
+
+
+/* Video button styling */
+
+.bmd a.grey_button {
+	color: #102535;
+	font-size: 1rem;
+	background-color: #EFEFEF;
+	border: none;
+	padding: 10px 10px;
+	text-decoration: none !important;
+	display: inline-block;
+	transition-duration: 0.4s;
+}
+
+.bmd a.grey_button:hover {
+  background-color: #565656 !important;
+	color: white;
+	
+}
+
+/* Module button styling TO BE CHANGED WHEN UTILISED */
+
+.bmd .module_button {
+	color: #102535;
+	margin: 5px;
+	padding: 10px 10px 10px 10px;
+	height: 180px;
+ 	transition: 0.4s;
+	border-style: solid;
+    border-color: #102535;
+	border-width: 1.875rem 1px 1px 1px;
+}
+.bmd .module_button:hover {
+	border-color: #48B79D ;
+}
+
+.bmd .module_button h2 {
+	border-bottom: 0px!important;
+}
+
+/* Sets the span inside the a href to cover the whole button - could be simplified not they aren't animated? */
+.bmd .module_button span.coverlink {
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+
+.bmd .module_button span.coverlink a:hover {
+text-decoration:none;
+}
+
+
+
+/*----Navigation Bar----*/
+
+.kl_basic_navlist {
+  max-width: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: #48B79D;
+}
+.bmd ul.kl_basic_navlist {
+	padding:0 5%;
+	font-weight:bold;
+}
+a.nav_list {
+	color: #102535; 
+}
+li[id*="kl_nav_item"]{
+	transition-duration: 0.4s;
+}
+li[id*="kl_nav_item"]:hover {
+  background-color: #9DD8CA ;
+}
+.bmd ul.kl_basic_navlist a.external:hover span, .bmd ul.kl_basic_navlist a.external:focus span, .bmd ul.kl_basic_navlist a.external:active span, .user_content a:not(.btn):not(.Button):not(.ui-button):not([role='button']), .mceContentBody a:not(.btn):not(.Button):not(.ui-button):not([role='button']) {
+	text-decoration:none!important;
+}
+.bmd ol.kl_basic_navlist li:after,
+.bmd ul.kl_basic_navlist li:after {
+  content: none;
+}
+
+
+
+
+/*----Video Styling ----*/
+
+.bmd element.style {
+	width: 100%!important;
+}
+
+
+
+
+/*----Domain Cards----*/
+
+.bmd .shadowcard {
+	width: 99%;
+	-webkit-box-shadow: 1px 1px 7px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow:    1px 1px 7px 1px #ccc;  /* Firefox 3.5 - 3.6 */
+	box-shadow:         1px 1px 7px 1px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+	margin:1.25rem auto;
+	position:relative;
+	padding:1.875rem 1.875rem 1.875rem 1.875rem;
+}
+
+.bmd .shadowcard i {
+	font-size: 6.5em;
+	line-height: 200px;
+}
+
+.bmd .shadowcard h3 {
+  font-size: 1.166rem;
+  font-weight: bold;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	border:0!important;
+}
+
+
+.bmd .domaincard1 h3, .bmd .domaincard1 i {
+  color: #fa6769;
+}
+
+.bmd .domaincard2 h3, .bmd .domaincard2 i {
+  color: #0078d1;
+}
+
+.bmd .domaincard3 h3, .bmd .domaincard3 i {
+  color: #90be6d;
+}
+
+.bmd .domaincard4 h3, .bmd .domaincard4 i {
+  color: #b557ff;
+}
+
+
+.bmd .domain1, .bmd .domain1 i {
+  color: #fa6769;
+}
+
+.bmd .domain2, .bmd .domain2 i {
+  color: #0078d1;
+}
+
+.bmd .domain3, .bmd .domain3 i {
+  color: #90be6d;
+}
+
+.bmd .domain4, .bmd .domain4 i {
+  color: #b557ff;
+}
+
+.bmd .shadowcard li {
+	margin:0 0 13px 0!important;
+}
+
+.bmd .domain_content i {
+	font-size: 1.5rem;
+    line-height: 16px;
+}
+
+
